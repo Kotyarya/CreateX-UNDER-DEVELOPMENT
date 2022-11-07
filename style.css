@@ -1,6 +1,12 @@
 :root {
   --fontSize: 0.52083vw;
 }
+[class__container] {
+  padding: 0 34.5rem;
+}
+/* ._container {
+    padding: 0 34.5rem;
+} */
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +14,13 @@
   text-decoration: none;
   color: black;
   font-weight: 700;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 0.6rem;
 }
 ul,
 li {
@@ -33,6 +46,9 @@ nav {
     0px 30px 24px -10px rgba(154, 156, 165, 0.05),
     0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  position: fixed;
+  background-color: #ffddd5;
+  z-index: 10;
 }
 .nav-logo {
   width: 13rem;
@@ -63,6 +79,7 @@ nav button {
   font-weight: 700;
   font-size: 1.6rem;
   cursor: pointer;
+  transition: 1s;
 }
 .nav-reg {
   font-size: 1.6rem;
@@ -119,7 +136,8 @@ h1 {
   letter-spacing: 1px;
   color: rgba(30, 33, 44, 1);
 }
-.enjoy-btn-trans {
+.enjoy-btn-trans,
+.courses-btn {
   width: 14.8rem;
   height: 5.2rem;
   border-radius: 0.4rem;
@@ -132,6 +150,7 @@ h1 {
   cursor: pointer;
   margin-right: 2.4rem;
   margin-top: 6rem;
+  border-width: 1px;
 }
 .enjoy-img {
   width: 60rem;
@@ -197,6 +216,13 @@ h2 {
 .about-element {
   font-size: 1.6rem;
   font-weight: 400;
+  display: flex;
+  gap: 1.6rem;
+}
+.about-element img {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.2rem 0 0 0;
 }
 .about-btn {
   width: 16.1rem;
@@ -212,6 +238,7 @@ h2 {
 .courses-text {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .courses-subtitle {
   font-size: 1.6rem;
@@ -221,4 +248,112 @@ h2 {
 .courses-title {
   font-weight: 900;
   font-size: 4.6rem;
+}
+.courses-btn {
+  font-size: 1.6rem;
+  width: 20.2rem;
+  background-color: white;
+  align-self: center;
+  margin: 0;
+  transition: 1s;
+}
+.courses-btn:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: white;
+}
+.courses-blocks {
+  display: grid;
+  grid-template: repeat(3, 21.4rem) / repeat(2, 60rem);
+  gap: 3rem;
+  padding-top: 6rem;
+}
+.courses-block {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border: 1px solid #e5e8ed;
+  position: relative;
+}
+.courses-block:hover {
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  z-index: 50;
+}
+.block-text {
+  padding-left: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 32.2rem;
+  justify-content: center;
+}
+.marker {
+  font-size: 1.4rem;
+  color: white;
+  font-weight: 400;
+  border-radius: 4px;
+
+  display: flex;
+  height: 2.3rem;
+  justify-content: center;
+  align-items: center;
+}
+._green {
+  background-color: rgba(3, 206, 164, 1);
+  width: 7.9rem;
+}
+._blue {
+  background-color: rgba(90, 135, 252, 1);
+  width: 9.7rem;
+}
+._orange {
+  background-color: rgba(248, 152, 40, 1);
+  width: 11.2rem;
+}
+._pink {
+  background-color: rgba(245, 47, 110, 1);
+  width: 5.9rem;
+}
+.discription {
+  font-size: 2rem;
+}
+.info {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(120, 122, 128, 1);
+}
+.info span {
+  color: #ff3f3a;
+}
+.benefits {
+  padding-top: 18rem;
+  padding-left: 34.5rem;
+  padding-right: 34.5rem;
+}
+.benefits-subtitle {
+  text-align: center;
+  font-size: 1.6rem;
+}
+h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 4.6rem;
+}
+.benefits-btns {
+  padding-top: 6rem;
+}
+.benefits-btn {
+  width: 29.8rem;
+  height: 4.6rem;
+  border: none;
+  background-color: white;
+  color: rgba(154, 156, 165, 1);
+}
+.benefits-btn img {
+  fill: rgba(154, 156, 165, 1);
 }
