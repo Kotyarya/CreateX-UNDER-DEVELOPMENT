@@ -1,0 +1,224 @@
+:root {
+  --fontSize: 0.52083vw;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", serif;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+ul,
+li {
+  list-style: none;
+}
+html,
+body {
+  font-size: var(--fontSize);
+  height: 500rem;
+  overflow-x: hidden;
+}
+header {
+  background-image: url(img/Header/Header-main/background.png);
+  background-size: cover;
+  height: 114rem;
+}
+nav {
+  padding: 2rem 0 2rem 34.5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+.nav-logo {
+  width: 13rem;
+  height: 2.2rem;
+}
+.nav-list {
+  padding-left: 6rem;
+  display: flex;
+  gap: 4rem;
+}
+.nav-list a {
+  font-size: 1.6rem;
+  color: rgba(66, 69, 81, 1);
+}
+nav button {
+  margin-left: 22.5rem;
+  margin-right: 3.6rem;
+}
+.nav-btn,
+.enjoy-btn,
+.about-btn {
+  width: 20.6rem;
+  height: 5.2rem;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 0.4rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.nav-reg {
+  font-size: 1.6rem;
+  padding-left: 0.8rem;
+}
+.nav-person {
+  width: 2rem;
+  height: 2rem;
+}
+.header-enjoy {
+  padding-top: 21.2rem;
+  padding-left: 34.4rem;
+  display: flex;
+}
+.enjoy-text {
+  padding-right: 18rem;
+}
+.enjoy-play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.play-btn {
+  margin-top: 1.6rem;
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: rgba(255, 63, 58, 1);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 1.6rem #fec8c2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.play-btn:hover {
+  box-shadow: none;
+}
+.play-btn img {
+  width: 1.1rem;
+  height: 1.6rem;
+}
+.enjoy-play p {
+  font-size: 1.4rem;
+  padding-top: 1.6rem;
+  padding-left: 2rem;
+}
+h1 {
+  padding-top: 4rem;
+  font-weight: 900;
+  font-size: 6.4rem;
+  line-height: 8.3rem;
+  letter-spacing: 1px;
+  color: rgba(30, 33, 44, 1);
+}
+.enjoy-btn-trans {
+  width: 14.8rem;
+  height: 5.2rem;
+  border-radius: 0.4rem;
+  border: solid;
+  background-color: #ffddd5;
+  border-color: rgba(255, 63, 58, 1);
+  color: rgba(255, 63, 58, 1);
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-right: 2.4rem;
+  margin-top: 6rem;
+}
+.enjoy-img {
+  width: 60rem;
+  height: 55rem;
+}
+.statistic {
+  display: flex;
+  align-items: center;
+  padding-left: 34.1rem;
+  padding-top: 18.9rem;
+}
+.statistic-number {
+  font-weight: 900;
+  font-size: 4.6rem;
+  padding-right: 1.2rem;
+}
+.statistic-name {
+  font-size: 1.6rem;
+  padding-right: 6.6rem;
+}
+.circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #ff3f3a;
+  margin-right: 6.6rem;
+}
+.about {
+  background-image: url(img/Main/About/background.png);
+  background-size: contain;
+  margin-top: 23.9rem;
+  height: 48.4rem;
+  padding-left: 34.5rem;
+  display: flex;
+}
+.about-img {
+  align-self: flex-end;
+  width: 70.5rem;
+  height: 56rem;
+}
+.about-text {
+  padding-left: 13.5rem;
+}
+.about-subtitle {
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-bottom: 0.8rem;
+}
+h2 {
+  font-weight: 900;
+  font-size: 4.6rem;
+  padding-bottom: 4rem;
+}
+.about-list {
+  width: 35.8rem;
+  gap: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.2rem;
+}
+.about-element {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.about-btn {
+  width: 16.1rem;
+  height: 4.4rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.courses {
+  padding-top: 18rem;
+  padding-left: 34.5rem;
+  padding-right: 34.5rem;
+}
+.courses-text {
+  display: flex;
+  justify-content: space-between;
+}
+.courses-subtitle {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.courses-title {
+  font-weight: 900;
+  font-size: 4.6rem;
+}
