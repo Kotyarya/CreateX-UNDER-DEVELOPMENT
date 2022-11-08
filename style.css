@@ -1,12 +1,10 @@
 :root {
   --fontSize: 0.52083vw;
 }
-[class__container] {
-  padding: 0 34.5rem;
+._container {
+  padding-left: 34.5rem;
+  padding-right: 34.5rem;
 }
-/* ._container {
-    padding: 0 34.5rem;
-} */
 * {
   padding: 0;
   margin: 0;
@@ -17,10 +15,6 @@
 }
 ::-webkit-scrollbar {
   width: 0;
-}
-::-webkit-scrollbar-track-piece {
-  background-color: transparent;
-  -webkit-border-radius: 0.6rem;
 }
 ul,
 li {
@@ -38,7 +32,8 @@ header {
   height: 114rem;
 }
 nav {
-  padding: 2rem 0 2rem 34.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -89,9 +84,8 @@ nav button {
   width: 2rem;
   height: 2rem;
 }
-.header-enjoy {
+.enjoy {
   padding-top: 21.2rem;
-  padding-left: 34.4rem;
   display: flex;
 }
 .enjoy-text {
@@ -129,6 +123,7 @@ nav button {
   padding-left: 2rem;
 }
 h1 {
+  width: 49.6rem;
   padding-top: 4rem;
   font-weight: 900;
   font-size: 6.4rem;
@@ -183,7 +178,6 @@ h1 {
   background-size: contain;
   margin-top: 23.9rem;
   height: 48.4rem;
-  padding-left: 34.5rem;
   display: flex;
 }
 .about-img {
@@ -232,8 +226,6 @@ h2 {
 }
 .courses {
   padding-top: 18rem;
-  padding-left: 34.5rem;
-  padding-right: 34.5rem;
 }
 .courses-text {
   display: flex;
@@ -332,8 +324,6 @@ h2 {
 }
 .benefits {
   padding-top: 18rem;
-  padding-left: 34.5rem;
-  padding-right: 34.5rem;
 }
 .benefits-subtitle {
   text-align: center;
@@ -346,14 +336,78 @@ h3 {
 }
 .benefits-btns {
   padding-top: 6rem;
+  display: flex;
 }
 .benefits-btn {
-  width: 29.8rem;
+  width: 30.7rem;
   height: 4.6rem;
   border: none;
   background-color: white;
-  color: rgba(154, 156, 165, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
 }
 .benefits-btn img {
-  fill: rgba(154, 156, 165, 1);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.btn-img-hv {
+  display: none;
+}
+.benefits-btn span {
+  color: rgba(154, 156, 165, 1);
+  font-size: 1.6rem;
+}
+.benefits-btn:hover .btn-img {
+  display: none;
+}
+.benefits-btn:hover .btn-img-hv {
+  display: block;
+}
+.benefits-btn:hover span {
+  color: rgba(255, 63, 58, 1);
+}
+.benefits-btn:focus {
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+}
+.benefits-btn:focus .btn-img {
+  display: none;
+}
+.benefits-btn:focus .btn-img-hv {
+  display: block;
+}
+.benefits-btn:focus span {
+  color: rgba(255, 63, 58, 1);
+}
+.benefits-btn:focus {
+  border: 1px solid #ff3f3a;
+  border-radius: 4px;
+}
+.benefits-main {
+  display: flex;
+  padding-top: 6rem;
+}
+.benefits-main img {
+  width: 60rem;
+  height: 44rem;
+  padding-left: 13.5rem;
+}
+.benefits-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 49.5rem;
+  justify-content: center;
+}
+.benefits-text-title {
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+.benefits-text-discription {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
 }
