@@ -23,7 +23,7 @@ li {
 html,
 body {
   font-size: var(--fontSize);
-  height: 500rem;
+  height: 1000rem;
   overflow-x: hidden;
 }
 header {
@@ -502,4 +502,50 @@ h3 {
 .event-btn button:hover {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   color: white;
+}
+.certificate {
+  display: flex;
+  padding-top: 12rem;
+  align-items: flex-start;
+  height: 45.4rem;
+}
+.certificate-text {
+  width: 39.2rem;
+  padding-right: 13.5rem;
+}
+.certificate-subtitle {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 0.8rem;
+}
+.certificate-text h3 {
+  text-align: start;
+  padding-bottom: 4.8rem;
+}
+.certificate-discription {
+  font-weight: 400;
+  font-size: 1.6rem;
+  padding-bottom: 3.2rem;
+}
+.certificate-logo {
+  display: flex;
+  gap: 4rem;
+}
+.certificate-logo img {
+  width: 10.5rem;
+  height: 5rem;
+}
+.certificate-img {
+  width: 70.5rem;
+  height: 50rem;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.1),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.08),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+.teams-testimonials {
+  background-image: url(img/Main/Teams-Testimonials/Background.png);
+  background-size: contain;
+  height: 157rem;
 }
