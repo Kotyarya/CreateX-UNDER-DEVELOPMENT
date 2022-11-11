@@ -64,7 +64,8 @@ nav button {
 }
 .nav-btn,
 .enjoy-btn,
-.about-btn {
+.about-btn,
+.blog-btn button {
   width: 20.6rem;
   height: 5.2rem;
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -548,4 +549,273 @@ h3 {
   background-image: url(img/Main/Teams-Testimonials/Background.png);
   background-size: contain;
   height: 157rem;
+}
+.teams {
+  padding-top: 16.6rem;
+  width: 125.2rem;
+}
+.teams-article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teams-text p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.teams-text h3 {
+  text-align: start;
+}
+.teams-btn button {
+  border-radius: 50%;
+  border: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.teams-btn button:hover {
+  background-color: #ff3f3a;
+  color: white;
+}
+.teams-galeria {
+  display: flex;
+  gap: 3rem;
+  padding-top: 6rem;
+}
+.teams-galeria-block {
+  position: relative;
+}
+.teams-galeria-block img {
+  width: 28.5rem;
+  height: 34rem;
+}
+.teams-galeria-block figcaption {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1.6rem;
+}
+.teams-galeria-block span {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgba(120, 122, 128, 1);
+}
+.galeria-block-hover {
+  z-index: 50;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 33, 44, 0) 43.9%,
+    rgba(30, 33, 44, 0.03) 55.21%,
+    rgba(30, 33, 44, 0.33) 68.73%,
+    rgba(30, 33, 44, 0.56) 76.17%,
+    rgba(30, 33, 44, 0.768225) 83.75%,
+    rgba(30, 33, 44, 0.92) 91.49%,
+    #1e212c 100%
+  );
+  margin-bottom: 6.5rem;
+  height: 34rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 0 2rem 0;
+}
+.galeria-block-hover img {
+  width: 2rem;
+  height: 2rem;
+  padding-right: 2rem;
+  opacity: 0.6;
+}
+.galeria-block-hover button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.galeria-block-hover button:hover img {
+  opacity: 1;
+}
+.teams-galeria-block:hover .galeria-block-hover {
+  cursor: pointer;
+  opacity: 1;
+}
+.testimonials {
+  padding-top: 18rem;
+}
+.testimonials article p {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.testimonials-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6rem;
+  gap: 6.9rem;
+}
+.testimonials-main button {
+  border-radius: 50%;
+  border: none;
+  width: 4.8rem;
+  height: 4.8rem;
+  background: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.testimonials-main button:hover {
+  background-color: #ff3f3a;
+  color: white;
+}
+.testimonial-block {
+  width: 102rem;
+  height: 34.4rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+    0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+  border-radius: 4px;
+}
+.testimonial-block-text p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 75.2rem;
+}
+.testimonial-block-text {
+  display: flex;
+}
+.testimonial-block-text img {
+  width: 2.8rem;
+  height: 2rem;
+  padding-right: 3rem;
+}
+.testimonial-block-signature {
+  display: flex;
+  padding-top: 3.5rem;
+  align-items: center;
+  align-self: flex-start;
+  padding-left: 16.3rem;
+}
+.testimonial-block-signature img {
+  width: 7.2rem;
+  height: 7.2rem;
+}
+.testimonial-block-signature figcaption {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(120, 122, 128, 1);
+  padding-left: 2rem;
+}
+.testimonial-block-signature figcaption mark {
+  font-size: 1.6rem;
+  background: none;
+}
+.testimonials-tracker {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  padding-top: 6rem;
+}
+.line {
+  width: 3rem;
+  height: 1px;
+  background-color: rgba(179, 183, 188, 1);
+  border-radius: 3px;
+}
+.line:first-child {
+  background-color: rgba(66, 69, 81, 1);
+}
+.blog {
+  padding-top: 12rem;
+}
+.blog article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog-text p {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.blog-text h3 {
+  text-align: start;
+}
+.blog-btn button {
+  width: 15.9rem;
+}
+.blog-main {
+  display: flex;
+  padding-top: 6rem;
+  gap: 3rem;
+}
+.blog-block {
+  width: 39rem;
+  height: 50.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.blog-block img {
+  width: 39rem;
+  height: 30rem;
+}
+.block-info p {
+  font-size: 1.4rem;
+  color: rgba(120, 122, 128, 1);
+  padding-top: 0.8rem;
+}
+.block-info img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.blog-block article {
+  font-size: 2rem;
+}
+.block-discription p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: rgba(66, 69, 81, 1);
+}
+.block-link {
+  padding-top: 0.8rem;
+  font-size: 1.6rem;
+}
+.block-link mark {
+  background: none;
+  color: rgba(255, 63, 58, 1);
+}
+.block-category img {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding-right: 0.4rem;
+}
+.block-category {
+  display: flex;
+  background: white;
+  border-radius: 4px;
+  padding: 0.1rem 0.8rem;
+  position: absolute;
+  margin: 1.2rem;
+}
+.block-category p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: rgba(66, 69, 81, 1);
 }
