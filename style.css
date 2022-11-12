@@ -23,7 +23,6 @@ li {
 html,
 body {
   font-size: var(--fontSize);
-  height: 1000rem;
   overflow-x: hidden;
 }
 header {
@@ -818,4 +817,177 @@ h3 {
   font-weight: 400;
   font-size: 1.4rem;
   color: rgba(66, 69, 81, 1);
+}
+.subscribe {
+  background-image: url(img/Main/subscribe/Subscribe.png);
+  background-size: contain;
+  height: 56.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18rem;
+}
+.subscribe article p {
+  text-align: center;
+  padding-top: 12rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.subscribe form {
+  padding-top: 6rem;
+  display: flex;
+}
+input [type="email" i] {
+  width: 42.2rem;
+  height: 5.2rem;
+  border: 0.1rem solid #d7dadd;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-email::placeholder {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: rgba(154, 156, 165, 1);
+}
+.subscribe-email:active {
+  border: none;
+}
+input[type="submit" i] {
+  width: 20.6rem;
+  height: 5.2rem;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 0.4rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: 1s;
+}
+input[type="email" i] {
+  width: 42.2rem;
+
+  border: 0.1rem solid #d7dadd;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  vertical-align: auto;
+  margin-right: 2.4rem;
+  padding: 1.3rem;
+}
+footer {
+  background-color: rgba(30, 33, 44, 1);
+  height: 39.6rem;
+}
+.footer {
+  padding-top: 8rem;
+  display: flex;
+}
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 27.9rem;
+}
+.footer-logo p {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+.footer-logo img {
+  width: 13rem;
+  height: 2.2rem;
+}
+.footer-media {
+  display: flex;
+  gap: 2rem;
+}
+.footer-media img {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.footer-media button {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: none;
+  background: none;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.footer-media button:hover {
+  opacity: 1;
+}
+.footer-links {
+  padding-left: 8rem;
+  display: flex;
+  gap: 8rem;
+  padding-right: 8rem;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.footer-list p {
+  color: white;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.footer-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer-list a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+  opacity: 0.6;
+}
+.footer-list img {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding-right: 0.8rem;
+}
+.footer-sign {
+  position: relative;
+}
+.footer-sign input {
+  display: block;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 28.6rem;
+}
+.footer-sign button {
+  position: absolute;
+  top: 5rem;
+  left: 34.8rem;
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+.footer-sign-discription {
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  width: 28.6rem;
+  padding-top: 1.2rem;
+}
+.footer-sign-title {
+  color: white;
+  width: 30rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: 2.4rem;
 }
