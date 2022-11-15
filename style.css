@@ -25,10 +25,11 @@ body {
   font-size: var(--fontSize);
   overflow-x: hidden;
 }
-header {
+.header-main {
   background-image: url(img/Header/Header-main/background.png);
   background-size: cover;
-  height: 114rem;
+  height: 108rem;
+  margin-top: 6rem;
 }
 nav {
   padding-top: 2rem;
@@ -41,8 +42,10 @@ nav {
     0px 12px 10px -6px rgba(154, 156, 165, 0.04),
     0px 4px 4px -4px rgba(30, 33, 44, 0.03);
   position: fixed;
+  z-index: 100;
+}
+.nav-pink {
   background-color: #ffddd5;
-  z-index: 10;
 }
 .nav-logo {
   width: 13rem;
@@ -64,7 +67,8 @@ nav button {
 .nav-btn,
 .enjoy-btn,
 .about-btn,
-.blog-btn button {
+.blog-btn button,
+.events-more-btn {
   width: 20.6rem;
   height: 5.2rem;
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -503,6 +507,14 @@ h3 {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
   color: white;
 }
+.events-more {
+  display: flex;
+  padding-top: 6.5rem;
+}
+.events-more p {
+  font-size: 2.8rem;
+  padding-right: 4rem;
+}
 .certificate {
   display: flex;
   padding-top: 12rem;
@@ -799,6 +811,7 @@ h3 {
 .block-link mark {
   background: none;
   color: rgba(255, 63, 58, 1);
+  padding-left: 0.8rem;
 }
 .block-category img {
   width: 1.6rem;
@@ -883,11 +896,11 @@ input[type="email" i] {
 }
 footer {
   background-color: rgba(30, 33, 44, 1);
-  height: 39.6rem;
 }
 .footer {
   padding-top: 8rem;
   display: flex;
+  padding-left: 34.5rem;
 }
 .footer-logo {
   display: flex;
@@ -968,8 +981,8 @@ footer {
 }
 .footer-sign button {
   position: absolute;
-  top: 5rem;
-  left: 34.8rem;
+  top: 6.5rem;
+  left: 27rem;
   background: none;
   border: none;
   font-size: 3rem;
@@ -990,4 +1003,39 @@ footer {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 2.4rem;
+}
+.footer-lower {
+  background-color: #2a2a38;
+  height: 5.8rem;
+  display: flex;
+  margin-top: 6rem;
+  justify-content: space-between;
+}
+.footer-lower-made-with {
+  display: flex;
+  align-items: center;
+}
+.footer-lower-made-with p {
+  color: white;
+  padding-right: 0.4rem;
+  font-weight: 400;
+}
+.footer-lower-made-with img {
+  width: 1.6rem;
+  height: 1.6rem;
+  opacity: 1;
+  padding-right: 0.4rem;
+}
+.footer-lower-go {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-lower-go button {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  color: white;
+  opacity: 0.6;
+  cursor: pointer;
 }
