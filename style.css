@@ -518,7 +518,6 @@ h3 {
 .certificate {
   display: flex;
   padding-top: 12rem;
-  align-items: flex-start;
   height: 45.4rem;
 }
 .certificate-text {
