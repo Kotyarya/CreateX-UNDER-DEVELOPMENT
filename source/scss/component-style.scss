@@ -1,0 +1,74 @@
+.titles,
+.display,
+.lead,
+.large,
+.base,
+.small,
+.extrasmall,
+.extraextrasmall {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+//----------Titles------------//
+h1 {
+  font-size: 6.4rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 4.6rem;
+  font-weight: 900;
+}
+h3 {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+h4 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+//----------------------//
+
+//-----------Text-----------//
+[class*="_display"] {
+  font-weight: 900;
+}
+[class*="_2"] {
+  font-size: 4.8rem;
+}
+[class*="_1"] {
+  font-size: 5.6rem;
+}
+[class*="_regular"] {
+  font-weight: 400;
+}
+[class*="_bold"] {
+  font-weight: 700;
+}
+[class*="_lead"] {
+  font-size: 2rem;
+}
+[class*="_large"] {
+  font-size: 1.8rem;
+}
+[class*="_base"] {
+  font-size: 1.6rem;
+}
+[class*="_small"] {
+  font-size: 1.4rem;
+}
+[class*="_extrasmall"] {
+  font-size: 1.2rem;
+}
+[class*="_extraextrasmall"] {
+  font-size: 1rem;
+}

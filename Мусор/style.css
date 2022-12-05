@@ -17,7 +17,8 @@
   width: 0;
 }
 ul,
-li {
+li,
+ol {
   list-style: none;
 }
 html,
