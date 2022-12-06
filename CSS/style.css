@@ -39,7 +39,8 @@ body {
 .base,
 .small,
 .extrasmall,
-.extraextrasmall {
+.extraextrasmall,
+.color {
   background-color: pink;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +124,103 @@ h5 {
   font-size: 1rem;
 }
 
+.color {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 3rem;
+}
+
+.white,
+.primary,
+.btn-gradient,
+.secondary,
+.divider-gradient,
+.success,
+.info,
+.pink,
+.danger,
+.warning,
+.purple {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.white p,
+.primary p,
+.btn-gradient p,
+.secondary p,
+.divider-gradient p,
+.success p,
+.info p,
+.pink p,
+.danger p,
+.warning p,
+.purple p {
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.primary {
+  background-color: #ff3f3a;
+}
+
+.btn-gradient {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+
+.secondary {
+  background-color: #ffcf2d;
+}
+
+.divider-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#dadbdd), color-stop(50%, #dadbdd), color-stop(100%, #dadbdd), color-stop(50%, #dadbdd), color-stop(0%, #dadbdd));
+  background: linear-gradient(#dadbdd 0%, #dadbdd 50%, #dadbdd 100%, #dadbdd 50%, #dadbdd 0%);
+}
+
+.success {
+  background-color: #03cea4;
+}
+
+.danger {
+  background-color: #ff4242;
+}
+
+.warning {
+  background-color: #f89828;
+}
+
+.info {
+  background-color: #5a87fc;
+}
+
+.pink {
+  background-color: #f52f6e;
+}
+
+.purple {
+  background-color: #7772f1;
+}
+
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
@@ -141,6 +239,6 @@ h5 {
   font-family: "Lato";
   src: url("../fonts/Lato-Regular.eot");
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg") format("svg");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }

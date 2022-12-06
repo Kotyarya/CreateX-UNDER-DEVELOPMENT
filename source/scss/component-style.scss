@@ -5,7 +5,8 @@
 .base,
 .small,
 .extrasmall,
-.extraextrasmall {
+.extraextrasmall,
+.color {
   background-color: pink;
   display: flex;
   flex-direction: column;
@@ -71,4 +72,74 @@ h5 {
 }
 [class*="_extraextrasmall"] {
   font-size: 1rem;
+}
+//----------------------//
+
+//-----------Color-----------//
+.color {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3rem;
+}
+.white,
+.primary,
+.btn-gradient,
+.secondary,
+.divider-gradient,
+.success,
+.info,
+.pink,
+.danger,
+.warning,
+.purple {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-weight: 900;
+    font-size: 1.3rem;
+  }
+}
+.white {
+  background-color: #ffffff;
+}
+.primary {
+  background-color: #ff3f3a;
+}
+.btn-gradient {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+}
+.secondary {
+  background-color: #ffcf2d;
+}
+.divider-gradient {
+  background: linear-gradient(
+    #dadbdd 0%,
+    #dadbdd 50%,
+    #dadbdd 100%,
+    #dadbdd 50%,
+    #dadbdd 0%
+  );
+}
+.success {
+  background-color: #03cea4;
+}
+.danger {
+  background-color: #ff4242;
+}
+.warning {
+  background-color: #f89828;
+}
+.info {
+  background-color: #5a87fc;
+}
+.pink {
+  background-color: #f52f6e;
+}
+.purple {
+  background-color: #7772f1;
 }
