@@ -6,7 +6,8 @@
 .small,
 .extrasmall,
 .extraextrasmall,
-.color {
+.color,
+.icon {
   background-color: pink;
   display: flex;
   flex-direction: column;
@@ -73,73 +74,82 @@ h5 {
 [class*="_extraextrasmall"] {
   font-size: 1rem;
 }
+[class*="_text-black"] {
+  color: #1e212c;
+}
+[class*="_text-gray1"] {
+  color: #424551;
+}
+[class*="_text-gray2"] {
+  color: #787a80;
+
+}
 //----------------------//
 
-//-----------Color-----------//
-.color {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 3rem;
+//-----------Icon-----------//
+
+[class*="_icon-small"] {
+  width: 1.6rem;
+  height: 1.6rem;
 }
-.white,
-.primary,
-.btn-gradient,
-.secondary,
-.divider-gradient,
-.success,
-.info,
-.pink,
-.danger,
-.warning,
-.purple {
-  border-radius: 50%;
-  width: 10rem;
-  height: 10rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  p {
-    font-weight: 900;
-    font-size: 1.3rem;
-  }
+[class*="_icon-medium"] {
+  width: 2rem;
+  height: 2rem;
 }
-.white {
-  background-color: #ffffff;
+[class*="_icon-big"] {
+  width: 2.4rem;
+  height: 2.4rem;
 }
-.primary {
-  background-color: #ff3f3a;
+[class*="_icon-extrabig"] {
+  width: 4.8rem;
+  height: 4.8rem;
+  fill: #ff3f3a;
 }
-.btn-gradient {
+[class*="_icon-black"] {
+  fill: #424551;
+}
+[class*="_icon-white"] {
+  fill: #fff;
+}
+[class*="_icon-primary"] {
+  fill: #ff3f3a;
+}
+[class*="_icon-gray"] {
+  fill: #9a9ca5;
+}
+//----------------------//
+
+//-----------Button-----------//
+button {
+  width: 4rem;
+  height: 2rem;
+}
+[class*="_btn-solid"] {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+  border: none;
+  color: white;
 }
-.secondary {
-  background-color: #ffcf2d;
+[class*="_btn-outline"] {
+  border: solid #ff3f3a 1px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  color: #ff3f3a;
 }
-.divider-gradient {
-  background: linear-gradient(
-    #dadbdd 0%,
-    #dadbdd 50%,
-    #dadbdd 100%,
-    #dadbdd 50%,
-    #dadbdd 0%
-  );
+[class*="_btn-large"] {
+  width: 179px;
+  height: 52px;
 }
-.success {
-  background-color: #03cea4;
+[class*="_btn-regular"] {
+  width: 166px;
+  height: 44px;
 }
-.danger {
-  background-color: #ff4242;
+[class*="_btn-small"] {
+  width: 123px;
+  height: 36px;
 }
-.warning {
-  background-color: #f89828;
-}
-.info {
-  background-color: #5a87fc;
-}
-.pink {
-  background-color: #f52f6e;
-}
-.purple {
-  background-color: #7772f1;
+
+[class*="_btn-outline"]:hover {
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  color: white;
 }
