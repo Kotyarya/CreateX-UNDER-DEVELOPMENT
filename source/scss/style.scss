@@ -108,3 +108,45 @@
     }
   }
 }
+.about {
+  background-image: url(../../img/Homepage/about/background.png);
+  background-size: cover;
+  width: 100%;
+  height: 48.4rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 24rem;
+  align-items: flex-end;
+  .about__container {
+    display: flex;
+    gap: 13.2rem;
+    align-items: flex-end;
+    .about__img {
+      width: 70.5rem;
+      height: 56rem;
+    }
+    .about__content {
+      margin-bottom: 2.6rem;
+      .about__article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .about__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        margin-top: 4rem;
+        margin-bottom: 2.2rem;
+        .about__item {
+          display: flex;
+          line-height: 2.6rem;
+          .about__icon {
+            fill: #ff3f3a;
+            padding-right: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}

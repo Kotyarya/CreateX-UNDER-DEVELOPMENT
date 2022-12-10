@@ -47,26 +47,33 @@ button {
 h1 {
   font-size: 6.4rem;
   font-weight: 900;
+  color: #1e212c;
 }
 
 h2 {
   font-size: 4.6rem;
   font-weight: 900;
+  color: #1e212c;
 }
 
 h3 {
   font-size: 3.2rem;
   font-weight: 900;
+  color: #1e212c;
 }
 
 h4 {
   font-size: 2.8rem;
   font-weight: 700;
+  color: #1e212c;
 }
 
 h5 {
   font-size: 1.6rem;
   font-weight: 700;
+  color: #1e212c;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 /*----------------------*/
@@ -145,7 +152,6 @@ h5 {
   border-radius: 0.4rem;
   border: none;
   color: white;
-  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -154,18 +160,19 @@ h5 {
   background: rgba(0, 0, 0, 0);
   border-radius: 0.4rem;
   color: #ff3f3a;
-  font-size: 1.6rem;
   font-weight: 700;
 }
 
 [class*=_btn-large] {
   height: 5.2rem;
   padding: 0 4rem;
+  font-size: 1.6rem;
 }
 
 [class*=_btn-regular] {
   height: 4.4rem;
   padding: 0 3.2rem;
+  font-size: 1.4rem;
 }
 
 [class*=_btn-small] {
@@ -344,4 +351,69 @@ h5 {
   height: 0.8rem;
   border-radius: 50%;
   background-color: #ff3f3a;
+}
+
+.about {
+  background-image: url(../../img/Homepage/about/background.png);
+  background-size: cover;
+  width: 100%;
+  height: 48.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 24rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.about .about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13.2rem;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.about .about__container .about__img {
+  width: 70.5rem;
+  height: 56rem;
+}
+.about .about__container .about__content {
+  margin-bottom: 2.6rem;
+}
+.about .about__container .about__content .about__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+.about .about__container .about__content .about__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+  margin-top: 4rem;
+  margin-bottom: 2.2rem;
+}
+.about .about__container .about__content .about__list .about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 2.6rem;
+}
+.about .about__container .about__content .about__list .about__item .about__icon {
+  fill: #ff3f3a;
+  padding-right: 1.6rem;
 }
