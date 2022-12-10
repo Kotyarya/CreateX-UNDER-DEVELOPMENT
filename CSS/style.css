@@ -10,6 +10,11 @@
   text-decoration: none;
 }
 
+a,
+p {
+  color: #424551;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -31,31 +36,14 @@ body {
   display: block;
 }
 
-/*--------------------*/
-.titles,
-.display,
-.lead,
-.large,
-.base,
-.small,
-.extrasmall,
-.extraextrasmall,
-.color,
-.icon {
-  background-color: pink;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin: 1rem;
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
 }
 
+/*--------------------*/
+/*----------Titles------------*/
 h1 {
   font-size: 6.4rem;
   font-weight: 900;
@@ -81,6 +69,8 @@ h5 {
   font-weight: 700;
 }
 
+/*----------------------*/
+/*-----------Text-----------*/
 [class*=_display] {
   font-weight: 900;
 }
@@ -125,18 +115,8 @@ h5 {
   font-size: 1rem;
 }
 
-[class*=_text-black] {
-  color: #1e212c;
-}
-
-[class*=_text-gray1] {
-  color: #424551;
-}
-
-[class*=_text-gray2] {
-  color: #787a80;
-}
-
+/*----------------------*/
+/*-----------Icon-----------*/
 [class*=_icon-small] {
   width: 1.6rem;
   height: 1.6rem;
@@ -158,49 +138,39 @@ h5 {
   fill: #ff3f3a;
 }
 
-[class*=_icon-black] {
-  fill: #424551;
-}
-
-[class*=_icon-white] {
-  fill: #fff;
-}
-
-[class*=_icon-primary] {
-  fill: #ff3f3a;
-}
-
-[class*=_icon-gray] {
-  fill: #9a9ca5;
-}
-
+/*----------------------*/
+/*-----------Button----------*/
 [class*=_btn-solid] {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  border-radius: 4px;
+  border-radius: 0.4rem;
   border: none;
   color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 [class*=_btn-outline] {
-  border: solid #ff3f3a 1px;
+  border: solid #ff3f3a 0.2rem;
   background: rgba(0, 0, 0, 0);
-  border-radius: 4px;
+  border-radius: 0.4rem;
   color: #ff3f3a;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 [class*=_btn-large] {
-  width: 179px;
-  height: 52px;
+  height: 5.2rem;
+  padding: 0 4rem;
 }
 
 [class*=_btn-regular] {
-  width: 166px;
-  height: 44px;
+  height: 4.4rem;
+  padding: 0 3.2rem;
 }
 
 [class*=_btn-small] {
-  width: 123px;
-  height: 36px;
+  height: 3.6rem;
+  padding: 0 2.4rem;
 }
 
 [class*=_btn-outline]:hover {
@@ -208,6 +178,7 @@ h5 {
   color: white;
 }
 
+/*----------Fonts-----------*/
 @font-face {
   font-family: "Lato";
   src: url("../fonts/Lato-Black.eot");
@@ -228,4 +199,149 @@ h5 {
   src: url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg") format("svg");
   font-weight: 400;
   font-style: normal;
+}
+/*---------------------*/
+/*-----------CSS----------*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #feddd0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5.2rem;
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+}
+.header .header__logo {
+  width: 13rem;
+  height: 2.2rem;
+  cursor: pointer;
+}
+.header .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4rem;
+  padding-left: 6rem;
+}
+.header .header__btn {
+  margin-left: 22.5rem;
+}
+.header .header__log {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+  margin-left: 3.6rem;
+}
+
+.enjoy {
+  width: 100%;
+  background-image: url(../../img/Homepage/enjoy/background.png);
+  background-size: cover;
+  height: 114rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.enjoy .enjoy__content {
+  padding-top: 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18rem;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__play {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__play .play__btn {
+  width: 5.2rem;
+  height: 5.2rem;
+  background-color: #ff3f3a;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__play .play__btn .play__btn-hover {
+  width: 8.4rem;
+  height: 8.4rem;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__play .play__btn .play__btn-hover .play__icon {
+  z-index: 1;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__play .play__btn:hover .play__btn-hover {
+  background-color: #fec8c1;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__play .play__text {
+  font-size: 1.4rem;
+  padding-left: 1.6rem;
+}
+.enjoy .enjoy__content .enjoy__title h1 {
+  width: 49.6rem;
+  padding-top: 4rem;
+}
+.enjoy .enjoy__content .enjoy__title .enjoy__block-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.4rem;
+  padding-top: 6rem;
+}
+.enjoy .enjoy__content .enjoy__img {
+  width: 60rem;
+  height: 55rem;
+}
+.enjoy .enjoy__statistic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 18.9rem;
+}
+.enjoy .enjoy__statistic .enjoy__statistic-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.2rem;
+}
+.enjoy .enjoy__statistic .enjoy__circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: #ff3f3a;
 }

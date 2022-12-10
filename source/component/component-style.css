@@ -1,27 +1,4 @@
-.titles,
-.display,
-.lead,
-.large,
-.base,
-.small,
-.extrasmall,
-.extraextrasmall,
-.color,
-.icon {
-  background-color: pink;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin: 1rem;
-}
-
+/*----------Titles------------*/
 h1 {
   font-size: 6.4rem;
   font-weight: 900;
@@ -47,6 +24,8 @@ h5 {
   font-weight: 700;
 }
 
+/*----------------------*/
+/*-----------Text-----------*/
 [class*=_display] {
   font-weight: 900;
 }
@@ -91,18 +70,8 @@ h5 {
   font-size: 1rem;
 }
 
-[class*=_text-black] {
-  color: #1e212c;
-}
-
-[class*=_text-gray1] {
-  color: #424551;
-}
-
-[class*=_text-gray2] {
-  color: #787a80;
-}
-
+/*----------------------*/
+/*-----------Icon-----------*/
 [class*=_icon-small] {
   width: 1.6rem;
   height: 1.6rem;
@@ -124,49 +93,39 @@ h5 {
   fill: #ff3f3a;
 }
 
-[class*=_icon-black] {
-  fill: #424551;
-}
-
-[class*=_icon-white] {
-  fill: #fff;
-}
-
-[class*=_icon-primary] {
-  fill: #ff3f3a;
-}
-
-[class*=_icon-gray] {
-  fill: #9a9ca5;
-}
-
+/*----------------------*/
+/*-----------Button----------*/
 [class*=_btn-solid] {
   background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
-  border-radius: 4px;
+  border-radius: 0.4rem;
   border: none;
   color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 [class*=_btn-outline] {
-  border: solid #ff3f3a 1px;
+  border: solid #ff3f3a 0.2rem;
   background: rgba(0, 0, 0, 0);
-  border-radius: 4px;
+  border-radius: 0.4rem;
   color: #ff3f3a;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 [class*=_btn-large] {
-  width: 179px;
-  height: 52px;
+  height: 5.2rem;
+  padding: 0 4rem;
 }
 
 [class*=_btn-regular] {
-  width: 166px;
-  height: 44px;
+  height: 4.4rem;
+  padding: 0 3.2rem;
 }
 
 [class*=_btn-small] {
-  width: 123px;
-  height: 36px;
+  height: 3.6rem;
+  padding: 0 2.4rem;
 }
 
 [class*=_btn-outline]:hover {

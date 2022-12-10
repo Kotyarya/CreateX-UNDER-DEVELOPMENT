@@ -8,6 +8,10 @@
   font-family: "Lato", serif;
   text-decoration: none;
 }
+a,
+p {
+  color: #424551;
+}
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -24,5 +28,10 @@ body {
 ::after,
 ::before {
   display: block;
+}
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
 }
 /*--------------------*/

@@ -1,3 +1,110 @@
 @import "null-style.scss";
 @import "component-style.scss";
 @import "fonts-style.scss";
+/*-----------CSS----------*/
+
+.header {
+  display: flex;
+  background-color: #feddd0;
+  align-items: center;
+  justify-content: center;
+  height: 5.2rem;
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  .header__logo {
+    width: 13rem;
+    height: 2.2rem;
+    cursor: pointer;
+  }
+  .header__list {
+    display: flex;
+    gap: 4rem;
+    padding-left: 6rem;
+  }
+  .header__btn {
+    margin-left: 22.5rem;
+  }
+  .header__log {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 3.6rem;
+  }
+}
+.enjoy {
+  width: 100%;
+  background-image: url(../../img/Homepage/enjoy/background.png);
+  background-size: cover;
+  height: 114rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .enjoy__content {
+    padding-top: 20rem;
+    display: flex;
+    gap: 18rem;
+    .enjoy__title {
+      .enjoy__play {
+        display: flex;
+        align-items: center;
+        .play__btn {
+          width: 5.2rem;
+          height: 5.2rem;
+          background-color: #ff3f3a;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .play__btn-hover {
+            width: 8.4rem;
+            height: 8.4rem;
+            background-color: #00000000;
+            border-radius: 50%;
+            position: absolute;
+            z-index: -1;
+            .play__icon {
+              z-index: 1;
+            }
+          }
+        }
+        .play__btn:hover .play__btn-hover {
+          background-color: #fec8c1;
+        }
+        .play__text {
+          font-size: 1.4rem;
+          padding-left: 1.6rem;
+        }
+      }
+      h1 {
+        width: 49.6rem;
+        padding-top: 4rem;
+      }
+      .enjoy__block-btn {
+        display: flex;
+        gap: 2.4rem;
+        padding-top: 6rem;
+      }
+    }
+    .enjoy__img {
+      width: 60rem;
+      height: 55rem;
+    }
+  }
+  .enjoy__statistic {
+    display: flex;
+    gap: 6.6rem;
+    align-items: center;
+    margin-top: 18.9rem;
+    .enjoy__statistic-block {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .enjoy__circle {
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background-color: #ff3f3a;
+    }
+  }
+}
