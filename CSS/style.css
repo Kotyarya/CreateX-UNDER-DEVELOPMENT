@@ -224,6 +224,7 @@ h5 {
   width: 100%;
   padding: 1rem 0;
   position: fixed;
+  z-index: 50;
 }
 .header .header__logo {
   width: 13rem;
@@ -416,4 +417,184 @@ h5 {
 .about .about__container .about__content .about__list .about__item .about__icon {
   fill: #ff3f3a;
   padding-right: 1.6rem;
+}
+
+.courses {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 19.6rem;
+  gap: 6rem;
+}
+.courses .courses__header {
+  width: 123rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.courses .courses__header .courses__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+}
+.courses .courses__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 22rem 3rem 22rem 3rem 22rem;
+  -ms-grid-columns: 60rem 3rem 60rem;
+      grid-template: repeat(3, 22rem)/repeat(2, 60rem);
+  gap: 3rem;
+}
+.courses .courses__content .courses__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.4rem;
+  border: 0.1rem solid #e5e8ed;
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+}
+.courses .courses__content .courses__block .courses__img {
+  width: 21.4rem;
+  height: 22rem;
+}
+.courses .courses__content .courses__block .courses__discription {
+  width: 32.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.courses .courses__content .courses__block .courses__discription .courses__category-marketing {
+  background-color: #03cea4;
+  color: white;
+  border-radius: 0.4rem;
+  width: 6.3rem;
+  padding: 0.2rem 0.8rem;
+}
+.courses .courses__content .courses__block .courses__discription .courses__category-managment {
+  background-color: #5a87fc;
+  color: white;
+  border-radius: 0.4rem;
+  width: 7.8rem;
+  padding: 0.2rem 0.8rem;
+}
+.courses .courses__content .courses__block .courses__discription .courses__category-hr {
+  background-color: #f89828;
+  color: white;
+  border-radius: 0.4rem;
+  width: 9.6rem;
+  padding: 0.2rem 0.8rem;
+}
+.courses .courses__content .courses__block .courses__discription .courses__category-design {
+  background-color: #f52f6e;
+  color: white;
+  border-radius: 0.4rem;
+  width: 4.4rem;
+  padding: 0.2rem 0.8rem;
+}
+.courses .courses__content .courses__block .courses__discription .courses__author {
+  color: #787a80;
+}
+.courses .courses__content .courses__block .courses__discription .courses__author .courses__price {
+  color: #ff4242;
+  font-weight: 700;
+}
+.courses .courses__content .courses__block:hover {
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  z-index: 1;
+}
+
+.benefits {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.benefits .benefits__article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.benefits .benefits__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 6rem;
+}
+.benefits .benefits__control .benefits__btn {
+  width: 30.7rem;
+  height: 4.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.8rem;
+  fill: #9a9ca5;
+}
+.benefits .benefits__control .benefits__btn .benefits__btn-text {
+  color: #9a9ca5;
+}
+.benefits .benefits__control .benefits__btn:focus {
+  fill: #ff3f3a;
+  border: 0.1rem solid #ff3f3a;
+  border-radius: 0.4rem;
+}
+.benefits .benefits__control .benefits__btn:focus .benefits__btn-text {
+  color: #ff3f3a;
+}
+.benefits .benefits__control .benefits__btn:hover {
+  fill: #ff3f3a;
+}
+.benefits .benefits__control .benefits__btn:hover .benefits__btn-text {
+  color: #ff3f3a;
 }
