@@ -3,9 +3,13 @@
 @import "fonts-style.scss";
 /*-----------CSS----------*/
 
+/*-----------Homepage----------*/
+
+.header_pink {
+  background-color: #feddd0;
+}
 .header {
   display: flex;
-  background-color: #feddd0;
   align-items: center;
   justify-content: center;
   height: 5.2rem;
@@ -881,4 +885,43 @@
       }
     }
   }
+  .footer__super-footer {
+    display: flex;
+    background-color: #292c37;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    .footer__made {
+      color: white;
+      padding-right: 0.4rem;
+    }
+    .footer__by {
+      color: white;
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+    }
+    .footer__by::before {
+      content: "";
+      width: 1.6rem;
+      height: 1.6rem;
+      background-image: url(../../img/icons/Heart.svg);
+      background-size: contain;
+    }
+    .footer__go {
+      text-transform: uppercase;
+      color: white;
+      opacity: 60%;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-left: 86.8rem;
+    }
+  }
+}
+
+/*-----------Courses----------*/
+
+.header__white {
+  background-color: white;
 }

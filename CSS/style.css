@@ -215,11 +215,15 @@ h5 {
 }
 /*---------------------*/
 /*-----------CSS----------*/
+/*-----------Homepage----------*/
+.header_pink {
+  background-color: #feddd0;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #feddd0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1480,4 +1484,52 @@ h5 {
 }
 .footer .footer__content .footer__form .footer__discription {
   color: white;
+}
+.footer .footer__super-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #292c37;
+  padding: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+.footer .footer__super-footer .footer__made {
+  color: white;
+  padding-right: 0.4rem;
+}
+.footer .footer__super-footer .footer__by {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer__super-footer .footer__by::before {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: url(../../img/icons/Heart.svg);
+  background-size: contain;
+}
+.footer .footer__super-footer .footer__go {
+  text-transform: uppercase;
+  color: white;
+  opacity: 60%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 86.8rem;
+}
+
+/*-----------Courses----------*/
+.header__white {
+  background-color: white;
 }
