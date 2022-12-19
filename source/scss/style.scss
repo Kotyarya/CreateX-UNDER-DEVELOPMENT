@@ -24,6 +24,14 @@
     display: flex;
     gap: 4rem;
     padding-left: 6rem;
+    .header__item {
+      .header__link:hover {
+        color: #ff3f3a;
+      }
+      .header__link_active {
+        color: #ff3f3a;
+      }
+    }
   }
   .header__btn {
     margin-left: 22.5rem;
@@ -939,6 +947,14 @@
     display: flex;
     gap: 4rem;
     padding-left: 6rem;
+    .header__item {
+      .header__link:hover {
+        color: #ff3f3a;
+      }
+      .header__link_active {
+        color: #ff3f3a;
+      }
+    }
   }
   .header__btn {
     margin-left: 22.5rem;

@@ -245,6 +245,12 @@ h5 {
   gap: 4rem;
   padding-left: 6rem;
 }
+.header_pink .header__list .header__item .header__link:hover {
+  color: #ff3f3a;
+}
+.header_pink .header__list .header__item .header__link_active {
+  color: #ff3f3a;
+}
 .header_pink .header__btn {
   margin-left: 22.5rem;
 }
@@ -1555,6 +1561,12 @@ h5 {
   display: flex;
   gap: 4rem;
   padding-left: 6rem;
+}
+.header_white .header__list .header__item .header__link:hover {
+  color: #ff3f3a;
+}
+.header_white .header__list .header__item .header__link_active {
+  color: #ff3f3a;
 }
 .header_white .header__btn {
   margin-left: 22.5rem;
