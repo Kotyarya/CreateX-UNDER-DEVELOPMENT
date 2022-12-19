@@ -7,8 +7,6 @@
 
 .header_pink {
   background-color: #feddd0;
-}
-.header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -922,6 +920,314 @@
 
 /*-----------Courses----------*/
 
-.header__white {
-  background-color: white;
+.header_white {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5.2rem;
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  z-index: 50;
+  .header__logo {
+    width: 13rem;
+    height: 2.2rem;
+    cursor: pointer;
+  }
+  .header__list {
+    display: flex;
+    gap: 4rem;
+    padding-left: 6rem;
+  }
+  .header__btn {
+    margin-left: 22.5rem;
+  }
+  .header__log {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 3.6rem;
+  }
+}
+.courses-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  margin-top: 13.3rem;
+  align-items: center;
+  background-image: url(../../img/courses/background.png);
+  background-size: contain;
+
+  .courses-menu__article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+  }
+  .courses-menu__control {
+    display: flex;
+    gap: 1.2rem;
+    .courses-menu__btn {
+      padding: 1rem 2rem;
+      color: #9a9ca5;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+      border-radius: 0.4rem;
+    }
+    .courses-menu__btn:hover {
+      color: #ff3f3a;
+    }
+    .courses-menu__btn:focus {
+      border: 0.1rem solid #ff3f3a;
+      color: #ff3f3a;
+    }
+    .courses-menu__form {
+      display: flex;
+      width: 31.5rem;
+      height: 4.4rem;
+      margin-left: 9rem;
+      .courses-menu__search {
+        width: 100%;
+        height: 100%;
+        border-radius: 0.4rem;
+        border: 0.1rem solid #d7dadd;
+        font-size: 1.4rem;
+        font-weight: 400;
+        padding-left: 1.6rem;
+        border-right: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+      .courses-menu__search::placeholder {
+        color: #9a9ca5;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+      .courses-menu__search:focus {
+        outline: none;
+      }
+      .courses-menu__submit {
+        display: flex;
+        align-items: center;
+        padding-right: 1.6rem;
+        border-radius: 0.4rem;
+        border: 0.1rem solid #d7dadd;
+        height: 4.6rem;
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        .courses-menu__icon {
+          fill: #9a9ca5;
+        }
+      }
+    }
+  }
+  .courses-menu__content {
+    display: grid;
+    grid-template: repeat(3, 43.8rem) / repeat(3, 39rem);
+    gap: 3rem;
+    .courses-menu__block:hover {
+      box-shadow: 0px 8rem 8rem -2rem rgba(154, 156, 165, 0.16),
+        0px 3rem 2.4rem -1rem rgba(154, 156, 165, 0.1),
+        0px 1.2rem 1rem -0.6rem rgba(154, 156, 165, 0.08),
+        0px 0.4rem 0.4rem -0.4rem rgba(30, 33, 44, 0.05);
+      z-index: 3;
+    }
+    .courses-menu__block {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      border: 0.1rem solid #e5e8ed;
+      border-radius: 0.4rem;
+      box-shadow: 0px 8rem 8rem -2rem rgba(154, 156, 165, 0.08),
+        0px 3rem 2.4rem -1rem rgba(154, 156, 165, 0.05),
+        0px 1.2rem 1rem -0.6rem rgba(154, 156, 165, 0.04),
+        0px 0.4rem 0.4rem -0.4rem rgba(30, 33, 44, 0.03);
+      cursor: pointer;
+      .courses-menu__img {
+        width: 100%;
+        height: 24rem;
+      }
+      .courses-menu__discription {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 2.4rem;
+        .courses-menu__category-marketing {
+          background-color: #03cea4;
+          color: white;
+          border-radius: 0.4rem;
+          width: 6.3rem;
+          padding: 0.2rem 0.8rem;
+        }
+        .courses-menu__category-managment {
+          background-color: #5a87fc;
+          color: white;
+          border-radius: 0.4rem;
+          width: 7.8rem;
+          padding: 0.2rem 0.8rem;
+        }
+        .courses-menu__category-hr {
+          background-color: #f89828;
+          color: white;
+          border-radius: 0.4rem;
+          width: 9.6rem;
+          padding: 0.2rem 0.8rem;
+        }
+        .courses-menu__category-design {
+          background-color: #f52f6e;
+          color: white;
+          border-radius: 0.4rem;
+          width: 4.4rem;
+          padding: 0.2rem 0.8rem;
+        }
+        .courses-menu__category-development {
+          background-color: #7772f1;
+          color: white;
+          border-radius: 0.4rem;
+          width: 8rem;
+          padding: 0.2rem 0.8rem;
+        }
+        .courses-menu__author {
+          color: #787a80;
+          .courses-menu__price {
+            color: #ff4242;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .courses-menu__more {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 12rem;
+  }
+}
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  width: 100%;
+  background-image: url(../../img/courses/background-testimonials.png);
+  background-size: cover;
+  .testimonials__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .testimonials__content {
+    display: flex;
+    align-items: center;
+    gap: 6.9rem;
+    .testimonials__btn {
+      width: 4.8rem;
+      height: 4.8rem;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .testimonials__btn:hover {
+      background-color: #ff3f3a;
+      .testimonials__icon {
+        fill: white;
+      }
+    }
+    .testimonials__block {
+      background-color: white;
+      border-radius: 0.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      width: 102rem;
+      box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08),
+        0px 30px 24px -10px rgba(154, 156, 165, 0.05),
+        0px 12px 10px -6px rgba(154, 156, 165, 0.04),
+        0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+      .testimonials__text {
+        display: flex;
+        padding: 6.4rem 10.5rem;
+        padding-bottom: 0rem;
+      }
+      .testimonials__text::before {
+        display: block;
+        content: "   ";
+        background-image: url(../../img/Homepage/team:testimonials/testimonials/braces.png);
+        background-size: cover;
+        width: 2.8rem;
+        height: 2rem;
+        padding-right: 2rem;
+        margin-right: 3rem;
+      }
+    }
+    .testimonials__autor {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      padding-left: 16.3rem;
+      padding-bottom: 6.4rem;
+      .testimonials__img {
+        width: 7.2rem;
+        height: 7.2rem;
+      }
+    }
+  }
+  .testimonials__status {
+    display: flex;
+    gap: 1.2rem;
+    .testimonials__tracker {
+      width: 3rem;
+      height: 0rem;
+      border: 0.15rem solid #b3b7bc;
+      background-color: #b3b7bc;
+      border-radius: 0.3rem;
+    }
+    .testimonials__tracker_active {
+      border: 0.15rem solid #424551;
+      background-color: #424551;
+    }
+  }
+}
+.certificate-courses {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 13rem;
+  margin-top: 12rem;
+  align-items: center;
+  .certificate__content {
+    width: 39.7rem;
+    .certificate__article {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      margin-bottom: 4.8rem;
+    }
+    .certificate__logos {
+      display: flex;
+      gap: 4rem;
+      margin-top: 3.2rem;
+      .certificate__logo {
+        width: 10.5rem;
+        height: 5rem;
+      }
+    }
+  }
+  .certificate__img {
+    width: 70.5rem;
+    height: 50rem;
+    box-shadow: 0rem 8rem 8rem -2rem rgba(154, 156, 165, 0.16),
+      0rem 3rem 2.4rem -10rem rgba(154, 156, 165, 0.1),
+      0rem 1.2rem 1rem -0.6rem rgba(154, 156, 165, 0.08),
+      0rem 4rem 4rem -4rem rgba(30, 33, 44, 0.05);
+    z-index: 3;
+  }
 }
