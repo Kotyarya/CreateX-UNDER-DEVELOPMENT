@@ -1312,27 +1312,83 @@
       gap: 0.8rem;
       align-items: center;
     }
-  }
-  .blog__control {
-    display: flex;
-    gap: 1.2rem;
-    .blog__btn {
-      padding: 1rem 2rem;
+    .blog__control {
       display: flex;
-      align-items: center;
-      gap: 0.8rem;
-      border-radius: 0.4rem;
-      color: #9a9ca5;
-      fill: #9a9ca5;
+      gap: 1.2rem;
+      .blog__btn {
+        padding: 1rem 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        border-radius: 0.4rem;
+        color: #9a9ca5;
+        fill: #9a9ca5;
+      }
+      .blog__btn:hover {
+        color: #ff3f3a;
+        fill: #ff3f3a;
+      }
+      .blog__btn:focus {
+        border: 0.1rem solid #ff3f3a;
+        color: #ff3f3a;
+        fill: #ff3f3a;
+      }
+      .blog__form {
+        display: flex;
+        align-items: center;
+        padding-left: 17.3rem;
+        .blog__label {
+          padding-right: 1.2rem;
+        }
+        .blog__select {
+          border-radius: 0.4rem;
+          border: 0.1rem solid #d7dadd;
+          width: 16rem;
+          height: 4.4rem;
+          padding: 0 1.6rem;
+          outline: none;
+          display: flex;
+        }
+        .blog__search {
+          width: 28.5rem;
+          height: 4.4rem;
+          border-radius: 0.4rem;
+          margin-left: 4rem;
+          border: 0.1rem solid #d7dadd;
+          font-size: 1.4rem;
+          font-weight: 400;
+          padding-left: 1.6rem;
+          border-right: none;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+        }
+        .blog__search::placeholder {
+          color: #9a9ca5;
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+        .blog__search:focus {
+          outline: none;
+        }
+        .blog__submit {
+          display: flex;
+          align-items: center;
+          padding-right: 1.6rem;
+          border-radius: 0.4rem;
+          border: 0.1rem solid #d7dadd;
+          height: 4.6rem;
+          border-bottom-left-radius: 0;
+          border-left: none;
+          border-top-left-radius: 0;
+          .blog__icon {
+            fill: #9a9ca5;
+          }
+        }
+      }
     }
-    .blog__btn:hover {
-      color: #ff3f3a;
-      fill: #ff3f3a;
-    }
-    .blog__btn:focus {
-      border: 0.1rem solid #ff3f3a;
-      color: #ff3f3a;
-      fill: #ff3f3a;
+    .blog__content {
+      display: grid;
+      grid-template: repeat(3, 39rem) / ;
     }
   }
 }
